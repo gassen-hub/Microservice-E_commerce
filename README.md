@@ -1,43 +1,48 @@
-Project Overview
-The Microservice E-commerce platform is designed to manage an online shopping experience with features like:
+# Microservice E-commerce Project
 
-Customer registration and management
-Product catalog management
-Order processing and tracking
-Email notifications for customers
-Each feature is encapsulated within its own microservice, allowing for easy scaling and maintenance.
+A scalable microservice-based e-commerce platform that manages customers, products, orders, and email notifications. It uses Spring Boot, PostgreSQL, and MongoDB, with Kanka for email notifications, ensuring efficient and flexible service management.
 
-Architecture
-The project uses a microservice architecture with each service responsible for a specific domain:
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Architecture](#architecture)
+- [Technologies Used](#technologies-used)
+- [Microservices](#microservices)
+- [Database Configuration](#database-configuration)
+- [Setup and Installation](#setup-and-installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-Customer Service: Manages customer data and operations.
-Product Service: Manages product catalog and inventory.
-Order Service: Handles order creation, updates, and tracking.
-Email Notification Service: Sends emails to customers for order confirmations, updates, and other notifications.
-Communication between microservices is handled using REST APIs, and data synchronization is maintained across different databases.
+## Project Overview
+The Microservice E-commerce platform offers features such as customer management, product catalog management, order processing, and automated email notifications, all encapsulated within a microservice architecture.
 
-Technologies Used
-Programming Language: Java (Spring Boot)
-Databases:
-MongoDB: Used for managing non-relational data.
-PostgreSQL: Used for relational data management.
-Email Service: Kanka (for handling email notifications)
-Containerization: Docker (for containerizing microservices)
-API Testing: Postman
-Microservices
-1. Customer Service
-Manages customer information, including registration, login, and profile updates.
-Uses PostgreSQL to store structured customer data.
-2. Product Service
-Handles product catalog, including CRUD operations for products.
-Uses MongoDB to manage product data due to its flexible schema structure.
-3. Order Service
-Manages order creation, updates, and history.
-Integrates with both the Customer and Product services to manage order-related data.
-Uses PostgreSQL for relational order data management.
-4. Email Notification Service
-Sends email notifications to customers.
-Uses Kanka to handle and dispatch emails.
-Database Configuration
-MongoDB: Used for flexible data models, suitable for managing product catalogs.
-PostgreSQL: A reliable relational database for structured data like customers and orders.
+## Architecture
+The project is divided into multiple microservices:
+- **Customer Service**: Handles customer data using PostgreSQL.
+- **Product Service**: Manages product catalogs with MongoDB.
+- **Order Service**: Processes and tracks orders with PostgreSQL.
+- **Email Notification Service**: Sends automated emails using Kanka.
+
+Microservices communicate via REST APIs, ensuring separation of concerns and easy scaling.
+
+## Technologies Used
+- **Programming Language**: Java (Spring Boot)
+- **Databases**: MongoDB and PostgreSQL
+- **Email Service**: Kanka
+- **Containerization**: Docker
+- **API Testing**: Postman
+
+## Microservices
+1. **Customer Service**: Manages user data and authentication.
+2. **Product Service**: CRUD operations for product catalog.
+3. **Order Service**: Handles order lifecycle and tracking.
+4. **Email Notification Service**: Manages and sends email notifications.
+
+## Database Configuration
+- **MongoDB**: Used for product data.
+- **PostgreSQL**: Used for customer and order data.
+
+## Setup and Installation
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/gassen-hub/Microservice-E_commerce.git
