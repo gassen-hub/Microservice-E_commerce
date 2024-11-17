@@ -2,16 +2,6 @@
 
 A scalable microservice-based e-commerce platform that manages customers, products, orders, and email notifications. It uses Spring Boot, PostgreSQL, and MongoDB, with Kanka for email notifications, ensuring efficient and flexible service management.
 
-## Table of Contents
-- [Project Overview](#project-overview)
-- [Architecture](#architecture)
-- [Technologies Used](#technologies-used)
-- [Microservices](#microservices)
-- [Database Configuration](#database-configuration)
-- [Setup and Installation](#setup-and-installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Project Overview
 The Microservice E-commerce platform offers features such as customer management, product catalog management, order processing, and automated email notifications, all encapsulated within a microservice architecture.
